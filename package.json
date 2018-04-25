@@ -1,0 +1,32 @@
+{
+  "name": "material-ripple",
+  "version": "1.0.0",
+  "description": "Material ripple effect",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-ivan/Material-ripple.git"
+  },
+  "author": "k-ivan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k-ivan/Material-ripple/issues"
+  },
+  "homepage": "https://github.com/k-ivan/Material-ripple#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.6.0"
+  }
+}

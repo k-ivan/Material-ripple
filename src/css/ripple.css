@@ -1,0 +1,12 @@
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all .8s ease-out;
+  pointer-events: none;
+}

@@ -1,0 +1,1 @@
+.ripple-container{position:relative;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.ripple{position:absolute;border-radius:50%;-webkit-transform:scale(0);transform:scale(0);-webkit-transition:all .8s ease-out;transition:all .8s ease-out;pointer-events:none}
