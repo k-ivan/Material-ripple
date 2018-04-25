@@ -95,6 +95,7 @@ const Ripple = function () {
     document.body.removeEventListener('mousedown', handlerShow);
     document.body.removeEventListener('mouseout', handlerHide);
     document.body.removeEventListener('mouseup', handlerHide);
+    document.body.removeEventListener('dragstart', handlerHide);
     handlerShow = null;
     handlerHide = null;
     ripple = null;
