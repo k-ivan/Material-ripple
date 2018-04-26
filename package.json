@@ -1,6 +1,6 @@
 {
   "name": "@k-ivan/md-ripple",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Material ripple effect",
   "main": "src/js/ripple.js",
   "distrib": "dist/js/ripple.js",
