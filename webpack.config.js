@@ -6,7 +6,10 @@ module.exports = {
   entry: './src/js/ripple.js',
   output: {
     path: __dirname + '/dist/',
-    filename: 'js/ripple.js'
+    filename: 'js/ripple.js',
+    library: 'Ripple',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
@@ -36,7 +39,8 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            presets: ['env'],
+            plugins: ['babel-plugin-add-module-exports']
           }
         }
       }

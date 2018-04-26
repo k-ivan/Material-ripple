@@ -106,7 +106,3 @@ const Ripple = function () {
 }();
 
 export default Ripple;
-
-if (typeof document !== 'undefined') {
-  window.Ripple = Ripple;
-}
