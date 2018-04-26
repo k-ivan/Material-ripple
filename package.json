@@ -2,7 +2,7 @@
   "name": "@k-ivan/md-ripple",
   "version": "1.0.1",
   "description": "Material ripple effect",
-  "main": "src/ripple.js",
+  "main": "src/js/ripple.js",
   "distrib": "dist/js/ripple.js",
   "scripts": {
     "watch": "webpack --watch",
