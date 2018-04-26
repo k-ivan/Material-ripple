@@ -1,5 +1,5 @@
 {
-  "name": "mdripple",
+  "name": "@k-ivan/md-ripple",
   "version": "1.0.0",
   "description": "Material ripple effect",
   "scripts": {

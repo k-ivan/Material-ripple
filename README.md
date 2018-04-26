@@ -18,10 +18,10 @@ Material ripple effect
 
 If you are using a module bundler
 ```
-npm i mdripple
+npm i @k-ivan/md-ripple
 ```
 ```js
-import Ripple from 'mdripple';
+import Ripple from '@k-ivan/md-ripple';
 Ripple.init('.md-ripple');
 // if necessary later destroy
 // Ripple.destroy();
