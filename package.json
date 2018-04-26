@@ -1,9 +1,8 @@
 {
   "name": "@k-ivan/md-ripple",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Material ripple effect",
-  "main": "src/js/ripple.js",
-  "distrib": "dist/js/ripple.js",
+  "main": "dist/js/ripple.js",
   "scripts": {
     "watch": "webpack --watch",
     "build": "webpack -p"
