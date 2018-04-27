@@ -25,7 +25,12 @@ const Ripple = function () {
 
     if (!target) return;
 
+    const targetPosition = getComputedStyle(target)['position'];
     target.classList.add('ripple-container');
+    if (targetPosition !== 'fixed' && targetPosition !== 'absolute') {
+      target.style.position = 'relative';
+    }
+
 
     const bgColor = target.getAttribute('data-ripple-color') || 'rgba(0,0,0, .3)';
     const isCenter = target.hasAttribute('data-ripple-center');
@@ -65,13 +70,15 @@ const Ripple = function () {
 
     const el = ripple;
     ripple = null;
+    const target = el.parentNode;
+    const ripples = target.getElementsByClassName('ripple');
 
     el.style.opacity = 0;
 
     setTimeout(() => {
-      el.parentNode.removeChild(el);
-    }, 800);
-
+      target.removeChild(el);
+      if (ripples.length < 1) target.style.position = '';
+    }, 700);
   }
 
   module.init = function (selector) {

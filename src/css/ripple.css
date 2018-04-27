@@ -1,12 +1,13 @@
 .ripple-container {
-  position: relative;
   overflow: hidden;
   user-select: none;
 }
 .ripple {
   position: absolute;
   border-radius: 50%;
-  transform: scale(0);
-  transition: all .8s ease-out;
+  transform: scale(0.01);
+  transition-property: transform, opacity;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
   pointer-events: none;
 }
