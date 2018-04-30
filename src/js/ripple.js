@@ -68,6 +68,9 @@ const Ripple = function () {
 
     if (!ripple) return true;
 
+    const computedDuration = getComputedStyle(ripple)['transition-duration'];
+    const delay = parseFloat(computedDuration) * 1000;
+
     const el = ripple;
     ripple = null;
     const target = el.parentNode;
@@ -78,7 +81,7 @@ const Ripple = function () {
     setTimeout(() => {
       target.removeChild(el);
       if (ripples.length < 1) target.style.position = '';
-    }, 700);
+    }, delay);
   }
 
   module.init = function (selector) {
